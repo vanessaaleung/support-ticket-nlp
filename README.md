@@ -7,7 +7,7 @@ Ticket Classification and Key Phrases Extraction
 <img  src="https://monkeylearn.com/blog/wp-content/uploads/2019/10/Screen-Shot-2019-10-03-at-12.29.23-PM.png">
 
 #### Data
-<a href="https://www.kaggle.com/aniketg11/supportticketsclassification">Kaggle</a>
+<a href="https://www.kaggle.com/aniketg11/supportticketsclassification">Support Ticket Classification</a>
 
 #### Technologies
 - Topic Modeling with LDA model
