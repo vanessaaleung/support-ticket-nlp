@@ -6,9 +6,11 @@ Ticket Classification and Key Phrases Extraction
 
 <img  src="https://monkeylearn.com/blog/wp-content/uploads/2019/10/Screen-Shot-2019-10-03-at-12.29.23-PM.png" width="500px">
 
+----------------
 #### Data
 <a href="https://www.kaggle.com/aniketg11/supportticketsclassification">Support Ticket Classification</a>
 
+----------------
 #### Tasks
 <ol>
   <li>Topic Modeling with LDA model
@@ -31,6 +33,7 @@ Ticket Classification and Key Phrases Extraction
   </li>
 </ol>
   
+----------------
 #### Terminologies
 <ul>
   <li>Topic Coherence</li>
