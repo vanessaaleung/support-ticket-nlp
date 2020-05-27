@@ -38,4 +38,12 @@ Ticket Classification and Key Phrases Extraction
 <ul>
   <li>Topic Coherence</li>
   Scores a single topic by measuring the degree of semantic similarity between high scoring words in the topic
+  <li>Latent Dirichlet Allocation (LDA)
+  Given the # documents, # words, and # topics, output:
+    <ul>
+      <li>distribution of words for each topic K</li>
+      <li>distribution of topics for each document i</li>
+    </ul>
+    <img src="https://miro.medium.com/max/638/0*Sj65xR38wDwuxhtr.jpg" height="300px">
+  </li>
 </ul>
