@@ -30,3 +30,9 @@ Ticket Classification and Key Phrases Extraction
   Key Phrases Extraction with <a href="https://github.com/DerwenAI/pytextrank">pytextrank</a> (combining spaCy and networkx)
   </li>
 <ol/>
+  
+#### Terminologies
+<ol>
+  <li>Topic Coherence</li>
+  Scores a single topic by measuring the degree of semantic similarity between high scoring words in the topic
+</ol>
