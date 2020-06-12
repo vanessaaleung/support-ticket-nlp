@@ -23,13 +23,37 @@ Ticket Classification and Key Phrases Extraction
           <li>Lemmatization</li>
         </ol>
       </li>
-      <li>Compute coherence values to find the optimal number of topics</li>
-      <li>Build the LDA model</li>
+      <li>Compute coherence values to find the optimal number of topics
+      <img src="coherence_scores.png">
+      </li>
+      <li>Build the LDA model
+      <img src="LDA_model.png">
+      </li>
       <li>Utilize pyLDAvis to visualize the topics</li>
     </ol>
   </li>
-  <li>
-  Key Phrases Extraction with <a href="https://github.com/DerwenAI/pytextrank">pytextrank</a> (combining spaCy and networkx)
+  <li>Key Phrases Extraction with <a href="https://github.com/DerwenAI/pytextrank">pytextrank</a> (combining spaCy and networkx)
+    <ol>
+      <li>Construct a graph, sentence by sentence, based on the spaCy part-of-speech tags tags</li>
+      <li>Use matplotlib to visualize the lemma graph
+      <img src="lemma_graph.png">
+      </li>
+      <li>Use PageRank – which is approximately eigenvalue centrality – to calculate ranks for each of the nodes in the lemma graph
+        <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/97138b5e39ce8a24e0ee2e411d4c4d0a3513ec42">
+        <ol>
+          <li>$a_{v,t}=1$ if vertex $v$ is linked to vertex $t$, and $a_{v,t}=0$ otherwise</li>
+          <li>$M(v)$ is a set of the neighbors of $v$ and $\lambda$ is a constant</li>
+        </ol>
+      </li>
+      <li>Collect the top-ranked phrases from the lemma graph based on the noun chunks</li>
+      <li>Find a minimum span for each phrase based on combinations of lemmas
+        <pre><code>
+        permission 1 0.17555037929471423
+        requisitions 1 0.1742458175386728
+        recruiter 1 0.1416381454134179
+        </code></pre>
+      </li>
+    </ol>
   </li>
 </ol>
   
