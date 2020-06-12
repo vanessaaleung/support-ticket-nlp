@@ -10,6 +10,8 @@ Ticket Classification and Key Phrases Extraction
 #### Data
 <a href="https://www.kaggle.com/aniketg11/supportticketsclassification">Support Ticket Classification</a>
 
+<img src="data.png" width="500px">
+
 ----------------
 #### Tasks
 <ol>
@@ -23,22 +25,19 @@ Ticket Classification and Key Phrases Extraction
           <li>Lemmatization</li>
         </ol>
       </li>
-      <li>Compute coherence values to find the optimal number of topics
-      <img src="coherence_scores.png">
-      </li>
-      <li>Build the LDA model
-      <img src="LDA_model.png">
-      </li>
+      <li>Compute coherence values to find the optimal number of topics</li>
+      <li><img src="coherence_scores.png" width="300px"></li>
+      <li>Build the LDA model</li>
+      <li><img src="LDA_model.png" width="400px"></li>
       <li>Utilize pyLDAvis to visualize the topics</li>
     </ol>
   </li>
   <li>Key Phrases Extraction with <a href="https://github.com/DerwenAI/pytextrank">pytextrank</a> (combining spaCy and networkx)
     <ol>
       <li>Construct a graph, sentence by sentence, based on the spaCy part-of-speech tags tags</li>
-      <li>Use matplotlib to visualize the lemma graph
-      <img src="lemma_graph.png">
-      </li>
-      <li>Use PageRank – which is approximately eigenvalue centrality – to calculate ranks for each of the nodes in the lemma graph
+      <li>Use matplotlib to visualize the lemma graph</li>
+      <li><img src="lemma_graph.png" width="700px"></li>
+      <li>Use PageRank – which is approximately <a href="https://en.wikipedia.org/wiki/Eigenvector_centrality">eigenvalue centrality</a> – to calculate ranks for each of the nodes in the lemma graph
         <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/97138b5e39ce8a24e0ee2e411d4c4d0a3513ec42">
         <ol>
           <li>$a_{v,t}=1$ if vertex $v$ is linked to vertex $t$, and $a_{v,t}=0$ otherwise</li>
